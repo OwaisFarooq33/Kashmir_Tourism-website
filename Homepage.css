@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: rgb(249, 231, 231);
+    background-color: rgb(188, 186, 184);
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+
+.all{
+
+  /* border: 5px solid rgb(101, 11, 77); */
+  width: 100%;
+  height: 100vh;
+  
+
+
+}
+
+/* body div{
+    border:10px solid blue;
+} */
+
+.logoandmenubar{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* border:2px solid rgb(0, 0, 0); */
+    height: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================ This is the bottom line =================================*/
+  
+
+  
+  
+  
+  
+    form.example input[type=text] {
+      margin-bottom: 30px;
+      padding: 10px;
+      font-size: 10px;
+      border: 1px solid rgb(255, 255, 255);
+      color: rgb(249, 249, 249);
+      float: left;
+      outline: none;
+      width: 80%;
+      background:transparent;
+      border-radius: 10px;
+      margin-top: 30px;
+      
+    }
+    
+    /* Style the submit button */
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background:transparent;
+      color: rgb(255, 255, 255);
+      font-size: 10px;
+      border: 1px solid rgb(255, 247, 247);
+      border-radius: 10px;
+      border-left: none; /* Prevent double borders */
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    
+    form.example button:hover {
+      background:rgb(72, 196, 82);
+  
+    }
+    
+    /* Clear floats */
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+  
+  
+  /*============================ This is the bottom line =================================*/
+  
+
+ /* ======================= menubar properties================================================ */
+
+ .menu-bar
+ {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background: transparent;
+ /* height: 70px; */
+ width: 100%;
+ /* margin-top: 10px; */
+ text-align: center;
+ font-size: 20px;
+ /* margin-right: 250px; */
+ /* border: 4px solid rgb(0, 0, 0); */
+ }
+ 
+ .menu-bar ul
+ {
+ 
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+ list-style: none;width: 100%;
+
+ /* z-index: 1; */
+ /* border: 3px solid rgb(142, 55, 55); */
+ color: rgb(0, 234, 39);
+ 
+ 
+ }
+ 
+ .menu-bar ul .li1
+ {
+     display:flex;
+     flex-direction:column;
+     /* border: 3px solid rgb(0, 0, 0); */
+     align-items: center;
+     margin: -10px;
+     padding: 15px;
+    
+
+  }
+
+  .menu-bar ul li
+  {
+    font-size: 10px;
+      /* display:flex;
+      flex-direction:column;
+      border: 3px solid rgb(0, 0, 0);
+      align-items: center; */
+      margin: -10px;
+      padding: 15px;
+     
+ 
+   }
+
+ .menu-bar ul li:hover
+ {
+
+     cursor: auto;
+     background: transparent;
+     /* border-bottom: 1px solid white; */
+     border-top: 1px solid rgb(0, 0, 0);
+     border-radius: 15px;
+     /* z-index: 1; */
+     /* border-radius: 3px; */
+ }
+ 
+ .menu-bar ul li a
+ {
+     font-size: 15px;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+   
+ }
+ .subdiff li:hover {
+    
+    text-decoration: none;
+    color: green;
+ }
+
+ 
+ 
+ .sub-menu1
+ {
+     /* border: 3px solid red; */
+     width: 100px;
+     display: none;
+     margin-top: 10px;
+     background-color: transparent;
+     
+     
+ }
+ 
+ 
+ .menu-bar ul li:hover .sub-menu1
+ {
+     display: block;
+     position: absolute;
+     background: transparent;
+     color: solid rgb(255, 255, 255);
+     margin-top: 25px;
+     /* margin-left: 15; */
+     
+ 
+ 
+ }
+ 
+ .menu-bar ul li:hover .sub-menu1 ul
+ {
+    /* background-color: #000000; */
+   
+     display: block;
+     margin:20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 15px;
+     font-weight: bold;
+    
+     
+     
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li
+ {
+ 
+ width: 270px;
+ padding: 10px;
+ background: transparent;
+ color: solid rgb(249, 249, 249);
+ /* border-bottom: 0.5px solid white;
+ border-top: 0.5px solid white;
+ border-radius: 15px; */
+ text-align: left;
+ /* background-color:rgb(255, 255, 255); */
+ 
+ 
+ 
+ 
+ }
+ 
+ .menu-bar ul li:hover .sub-menu1 ul li a:hover{
+     color: rgb(0, 0, 0);
+ }
+ 
+ 
+ /* ======================= menubar properties================================================ */
+
+
+ .vid{
+     /* border: 5px solid green; */
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    /* height:100vh; */
+    z-index: -1;
+  }
+
+  .moto{
+    margin-top: 30%;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Dosis', sans-serif;
+
+  }
+  h3{
+
+    font-size: 40px;
+  }
+
+  /* .fix{
+    height: 100vh;
+  } */
+
+
+  /* =================season pictures and texts================================================================== */
+
+.seasonpictures{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 70%;
+  height: 50%;
+  /* border: 5px solid rgb(51, 51, 7); */
+
+}
+
+
+.sea{
+  /* border: 5px solid red; */
+  margin-bottom: 3%;
+  text-align: center;
+  font-size: 300%;
+  color: brown;
+}
+
+.pic1n2,.pic3n4{
+  width:100%;
+  /* border: 5px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic1n2 img ,.pic3n4 img{
+
+
+height: 100%;
+width: 100%;
+border-radius: 10%;
+
+}
+.pic1n2 div,.pic3n4 div{
+  width: 95%;
+  height: 350px;
+  /* border: 5px solid salmon; */
+}
+
+
+.seasons{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+
+}
+
+.text {
+  
+  width: 50%;
+  font-size: medium;
+  font-family: cursive;
+  margin-bottom: -30px;
+  color: rgb(255, 255, 255);
+
+}
+
+
+
+
+/* =====================mustvisitplaces============================================================== */
+
+.mustvisitplaces
+{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: transparent;
+/* margin-top: 10px; */
+/* border: 5px solid rgb(177, 52, 125); */
+height: 600px;
+width: 100%;
+}
+
+
+.mustvisitplaces a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 5px solid rgb(88, 66, 162); */
+  /* border-radius: 10%; */
+  height: 80%;
+  width: 100%;
+} 
+
+.ioa{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+  /* border: 5px solid red; */
+}
+
+.ioa img{
+  border-radius: 10%;
+  /* position: absolute; */
+  width: 100%;
+  height: 90%;
+  opacity: 0.9;
+ margin-top: 20%;
+ 
+  
+}
+
+.name{
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  font-size: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* =====================mustvisitplaces============================================================== */
+
+
+
+
+
+
+
+
+
+
+.uper{
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  /* /* width: 100%; */
+  background-color: transparent;
+  margin-top: 1%;
+  /* border: 5px solid rgb(64, 180, 64); */
+  font-size: xx-large;
+  color: white;
+  text-align: left;
+
+
+}
+
+.uper div {
+  margin-top: 0%;
+
+}
+
+.bottom{
+
+border: 5px solid black;
+width: 100%;
+height: 80%;
+
+}
+
+
+/* This the temperature icon */
+
+
+/* when temperature and humidity is fixed */
+.tempandhumidity{
+  position: fixed;
+  top:30%;
+  right: 2%;
+  font-size: 40px;
+  color: rgb(159, 146, 41);
+  width: 15%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+  align-items:flex-start;
+  justify-content: space-around;
+  padding-left: 1%;
+
+}
+
+
+.fa-cloud {
+
+color: rgb(177, 177, 192);
+
+
+}
+/* =================if not fixed============================== */
+  /* .tempandhumidity{
+    width: 40%;
+    color: aliceblue;
+    border: 5px solid blue;
+    align-self: center;
+    display: flex;
+    font-size: 40px;
+    flex-direction: ;
+    align-items: center;
+    justify-content:space-around;
+    
+  } */
+
+  
+/* =================if not fixed============================== */
+
+
+/* when temperature and humidity is fixed */
+.temptext{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:10px;
+}
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{
+   
+   
+    /* border: 5px solid red; */
+    
+}
+
+  
+.menu-bar ul li a{  font-size: 12px;  }
+
+
+/* form.example input[type=text] {
+  padding: 5px;
+  font-size: 10px;
+  width: 70%;
+  border-radius: 5px;
+  
+} */
+
+/* Style the submit button */
+/* for */
+/* hiding the logo */
+.logo{
+  display: none;
+}
+
+.moto{
+font-size: 35px;
+margin-top: 25%;
+}
+
+.temptext{
+font-size:5px;
+}
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{
+   
+   
+    /* border: 5px solid green; */
+    
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body{
+   
+   
+    /* border: 5px solid yellow; */
+    
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body{
+   
+   
+    /* border: 5px solid blue; */
+    
+}
+}
