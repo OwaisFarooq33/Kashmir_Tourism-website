@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulmarg</title>
+    <link rel="stylesheet" href="gulmarg.css">
+    
+</head>
+<body>
+    <!-- <div class="fix"> -->
+    <div class="all">
+    <video autoplay loop muted plays-inline class="vid">
+    <source src="images/gulmarg.mp4" type="video/webm">
+  
+  </video>
+    <div class="logoandmenubar">    
+        <!-- logo and menubar -->
+
+        <div class="logo"><img src="images/logo.png" alt="" img{ height="50px" width="70px"}>
+        </div>
+
+
+        <div class="menu-bar">
+            <ul>
+            <li class="li1"><a href="Homepage.html">HOME</a></li>
+        
+        
+        <!-- This is the Destination dropdown -->
+        
+            <li class="li1"><a href="#">DESTINATIONS</a>
+            
+              <div class="sub-menu1">
+              
+            <ul class="subdiff">
+                <li><a href="Gulmarg.html">Gulmarg</a></li>
+                <li><a href="Pahalgam.html">Pahalgam</a></li>
+                <li><a href="Sonamarg.html">Sonamarg</a></li>
+                <li><a href="Manasbal.html">Manasbal</a></li>
+                <li><a href="Srinagar.html">Srinagar</a></li>
+                <li><a href="Kokernag.html">Kokernag</a></li>
+                <li><a href="Yousmarg.html">Yousmarg</a></li>
+                <li><a href="Tosmadan.html">Tosmadan</a></li>
+                <li><a href="LolabValley.html">LolabValley</a></li>
+            </ul>
+        
+             </div>
+              </li>
+        
+        <!-- This is the Religious Places dropdown -->
+        
+        
+             <li class="li1"><a href="#">RELIGIOUS PLACES</a>
+                <div class="sub-menu1">
+              
+                    <ul>
+                        <li><a href="#">Hazratbal</a></li>
+                        <li><a href="#">Amarnath</a></li>
+                        <li><a href="#">Shanker-Ancherya</a></li>
+                        <li><a href="#">Holy family catholic church</a></li>
+                    </ul>
+                
+                     </div>
+            
+            </li>
+        
+        
+        
+        <!-- This is the Discover More dropdown -->
+        
+        
+            <li class="li1"><a href="#">DISCOVER MORE</a>
+            
+                <div class="sub-menu1">
+              
+                    <ul>
+                        <li><a href="#">Adventure Tourism</a></li>
+                        <li><a href="#">Handicraft</a></li>
+                        <li><a href="#">Must visit Places</a></li>
+                        <li><a href="#">Lesser Known Places</a></li>
+                    </ul>
+                
+                     </div>
+            </li>
+        
+        
+        <!-- This will be the About us section -->
+        
+            <li class="li1"><a href="#">ABOUT US</a></li>
+            
+          
+        
+              <li>
+                  <!-- <a> -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/font-awesome.min.css">
+        <form class="example" action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+              <!-- </a> -->
+            </li>
+
+
+            </ul>
+             </div>
+    
+    </div>
+
+    <div class="moto">welcome to Gulmarg</div>
+    <div class="tempandhumidity"><i class="fa-solid fa-temperature-half"><span class="temptext1"></span></i><i class="fa-solid fa-cloud"><span class="temptext2">low</span></i></div>
+
+    <script>
+ var city = "gulmarg";
+    var APIkey = "50a4d79c37ca48cd6e8206aa691bcfd4";
+    let x,y;
+
+    fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`
+    )
+  .then((response) => response.json())
+  .then( 
+    (data) =>{
+       
+        
+    //   console.log(data);  
+
+      y=data.main.humidity+"%";
+      x=Math.floor(data.main.temp-273.15);
+
+
+    document.querySelector(".temptext1").innerHTML=x+'&#x2103';
+    document.querySelector(".temptext2").innerHTML=y;
+
+      }
+    
+  );
+
+    </script>
+
+    </div>
+
+
+<div class="uper">
+  <div class="headidng">
+ <h1>How to Reach Gulmarg?</h1> 
+  
+<div class="maps">
+ 
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d211495.64850650597!2d74.44944487199501!3d34.079266818772496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x38e1855686e3c5ef%3A0x66244b7cc1e305c6!2sSrinagar!3m2!1d34.0836708!2d74.7972825!4m5!1s0x38e1af91308dd977%3A0x7a5cc65c8fb01df7!2sGulmarg%20193403!3m2!1d34.048370399999996!2d74.3804791!5e0!3m2!1sen!2sin!4v1654590764205!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div class="txt"> The city of Gulmarg is situated at a distance of mere 51 kilometers from Srinagar. Therefore, traveling by road is the best option to cover the distance from Srinagar to Gulmarg. There are many buses available that will help you proceed with the journey. Other means of transportation are also available, however, taking a bus or hiring is the most convenient medium. The best time to visit Gulmarg to have a spectacular skiing experience is during winter from December to mid-March. Those of you who are wondering how to reach Gulmarg from Srinagar should take a look at the following information. 
+
+    <br>Srinagar to Gulmarg by Road: By Bus: The best way to travel from Srinagar to Gulmarg is by road.  To cover the 51 KMs distance between Srinagar to Gulmarg, you can travel by Srinagar to Tangmarg road. Local buses are available up to Tangmarg market from where the mini coaches or jeeps can be hired to reach Gulmarg. It takes approximately one hour and twelve minutes to reach Gulmarg from Srinagar. No AC bus is available on this route. The popular bus operators are JKSRTC Buses, TRC Srinagar.<br>By Car: One can also opt to drive to Gulmarg from Srinagar. Since it is a short distance, one can easily cover it through a road trip as well. Whether you opt to take a taxi or drive yourself, it is recommended to enquire about the road conditions of the area, especially during winters.</div>
+</div>
+</div>
+
+
+
+
+<div class="ptv">
+ <div class="hedng">PLACES TO VISIT IN GULMARG</div>
+
+
+
+ <h1>1. Skiing – Apharwat Peak</h1>
+ <div class="imgsgul">
+   <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+   
+  <div class="im1">
+    <img src="images/ski1.jpg" alt="">
+    <img src="images/ski2.jpg" alt="">
+    <img src="images/ski3.jpg" alt="">
+ </div>
+
+
+
+ <div class="gultext">Adventure enthusiasts must surely indulge in skiing here as it is one of the top things to do in Gulmarg in winter. Stand amidst the snowy peaks surrounded by lush green coniferous forest. Feel the adrenaline rush while swiftly gliding down the snow-carpet covering the valley. Apharwat Peak is one of the best spots for indulging in this activity. You can hire ski equipment from the Government ski rental shops stationed here. There are also experienced trainers from whom you can learn this sport. <br>
+
+  Best Time to Visit: January and February are the best months to visit Gulmarg for skiing as you will get an enormous amount of snow over there
+  How to Reach: You can either drive or hire a private camp to reach the base of the Apharwat Peak</div>
+
+</div>
+
+ 
+ 
+ <br>
+ <br>
+  <h1>2. Gondola Ride – Kongdori Gulmarg Gondola</h1>
+  <div class="imgsgul">
+    <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+    
+   <div class="im1">
+     <img src="images/gon4.jpg" alt="">
+     <img src="images/gondola.jpg" alt="">
+     <img src="images/gon2.jpg" alt="">
+  </div>
+ 
+ 
+ 
+  <div class="gultext">One of the most exciting things to do in Gulmarg, Kashmir that enchants all the visitors is the Gondola ride. The Kongdori Gulmarg gondola is the 2nd highest cable-car line in the world. It is divided into 3 phases – Phase 1 is from Gulmarg to Kongdori; Phase 2 is from Kongdori to Apharwat; and Phase 3 is the Chair Lift phase from Kongdori to Mary Shoulder. The Gondola rides offer you the most spellbinding sights of both Gulmarg and Khilanmarg. Phase 1 lifts you up to the Kongdori Station which is at the height of about 8500 feet. And Phase 2 takes you to an altitude of almost 12300 feet. Enjoy the view of LOC, Nand Devi, and Pir Panjal Ranges.<br><br><br>
+
+    Best Time to Visit: March to June<br>
+    Gulmarg Gondola Ticket Price: <br>
+    Phase 1 –INR740 per Adult<br>
+    Phase 2 – INR 950 per Adult<br>
+    Chairlift – Adult INR 270<br>
+    How to Reach: Kongdori is just 20 minutes away from Gulmarg. Taxis can be hired or you may also reach there by walking on your own.</div>
+ 
+ </div>
+
+
+
+
+ <br>
+ <br>
+  <h1>3. Trekking – Alpather Lake</h1>
+  <div class="imgsgul">
+    <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+    
+   <div class="im1">
+     <img src="images/alpather-lake-2.jpg" alt="">
+     <img src="images/alpather.jpg" alt="">
+     <img src="images/best.jpg" alt="">
+  </div>
+ 
+ 
+ 
+  <div class="gultext">Trekking is also one of the best things to do in Gulmarg. You would not be able to resist the magical charm of this completely frozen lake in Gulmarg. The breathtaking sight of the Alpather Lake comes as the perk of a trekking journey. It is actually located at the foot of the twin Apharwat Peak at an approximate height of 4400 meters. Interestingly, the lake remains frozen even in the months of May and June. Enormous ice chunks floating on the lake adds sparkle-effect to the view. Surrounded by rocky mountains and meadows, this is a great place to relax after the tiring sessions of trekking or skiing. <br>
+
+    Best Time to Visit: November to mid-June (Winter) and June to September<br>
+    How to Reach: From Gulmarg, you may either go by road or opt for trekking as well. But the best way to reach this lake is Gondola. Pony ride can also be taken.</div>
+ 
+ </div>
+
+
+
+
+ <br>
+ <br>
+  <h1>5. Bird Watching – Gulmarg Biosphere Reserve</h1>
+  <div class="imgsgul">
+    <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+    
+   <div class="im1">
+     <img src="images/bird.jpeg" alt="">
+     <img src="images/b2.jpg" alt="">
+     <img src="images/b3.jpeg" alt="">
+  </div>
+ 
+ 
+ 
+  <div class="gultext">Gulmarg Biosphere Reserve is spread over 180 sq. km and is situated at 2400 meters to 4300 meters above sea level, known for its flora, fauna, and wildlife.
+    Gulmarg Biosphere Reserve is spread over 180 square km and is situated at an altitude of about 2400 meters to 4300 meters above sea level.
+    
+    It is known for its flora, fauna, and wildlife. It is also a habitat for birds. Bird watchers can find many species of birds here, such as vulture, monal, sun kok, koalas, and migratory birds like European hoopoe, wild crow, blue rook pigeon, Kashmir roller, etc.
+    
+    This reserve provides shelter to many wildlife like coo, goat, leopard, red fox, musk deer, among many others.
+    
+    Large number of plants and shrubs like Sauraberia torments, Indigofera heteranta, Vibram sp. are found here.
+    
+    Apart from this, trees like pine, deodar, chestnut, etc. are found.
+    
+    It is a paradise for enthusiasts and adventure lovers.</div>
+ 
+ </div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ <script src="https://kit.fontawesome.com/d5efe3800f.js" crossorigin="anonymous"></script>
+</body>
+</html>
