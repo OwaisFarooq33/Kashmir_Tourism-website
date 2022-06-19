@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonmarg</title>
+    <link rel="stylesheet" href="sonmarg.css">
+    
+</head>
+<body>
+    <!-- <div class="fix"> -->
+    <div class="all">
+    <video autoplay loop muted plays-inline class="vid">
+    <source src="images/sonav.mp4" type="video/webm">
+  
+  </video>
+    <div class="logoandmenubar">    
+        <!-- logo and menubar -->
+
+        <div class="logo"><img src="images/logo.png" alt="" img{ height="50px" width="70px"}>
+        </div>
+
+
+        <div class="menu-bar">
+            <ul>
+            <li class="li1"><a href="Homepage.html">HOME</a></li>
+        
+        
+        <!-- This is the Destination dropdown -->
+        
+            <li class="li1"><a href="#">DESTINATIONS</a>
+            
+              <div class="sub-menu1">
+              
+            <ul class="subdiff">
+                <li><a href="Gulmarg.html">Gulmarg</a></li>
+                <li><a href="Pahalgam.html">Pahalgam</a></li>
+                <li><a href="Sonamarg.html">Sonmarg</a></li>
+                <li><a href="Manasbal.html">Manasbal</a></li>
+                <li><a href="Srinagar.html">Srinagar</a></li>
+                <li><a href="Kokernag.html">Kokernag</a></li>
+                <li><a href="Yousmarg.html">Yousmarg</a></li>
+                <li><a href="Tosmadan.html">Tosmadan</a></li>
+                <li><a href="LolabValley.html">LolabValley</a></li>
+            </ul>
+        
+             </div>
+              </li>
+        
+        <!-- This is the Religious Places dropdown -->
+        
+        
+             <li class="li1"><a href="#">RELIGIOUS PLACES</a>
+                <div class="sub-menu1">
+              
+                    <ul>
+                        <li><a href="#">Hazratbal</a></li>
+                        <li><a href="#">Amarnath</a></li>
+                        <li><a href="#">Shanker-Ancherya</a></li>
+                        <li><a href="#">Holy family catholic church</a></li>
+                    </ul>
+                
+                     </div>
+            
+            </li>
+        
+        
+        
+        <!-- This is the Discover More dropdown -->
+        
+        
+            <li class="li1"><a href="#">DISCOVER MORE</a>
+            
+                <div class="sub-menu1">
+              
+                    <ul>
+                        <li><a href="#">Adventure Tourism</a></li>
+                        <li><a href="#">Handicraft</a></li>
+                        <li><a href="#">Must visit Places</a></li>
+                        <li><a href="#">Lesser Known Places</a></li>
+                    </ul>
+                
+                     </div>
+            </li>
+        
+        
+        <!-- This will be the About us section -->
+        
+            <li class="li1"><a href="#">ABOUT US</a></li>
+            
+          
+        
+              <li>
+                  <!-- <a> -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/font-awesome.min.css">
+        <form class="example" action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+              <!-- </a> -->
+            </li>
+
+
+            </ul>
+             </div>
+    
+    </div>
+
+    <div class="moto">welcome to Sonmarg</div>
+    <div class="tempandhumidity"><i class="fa-solid fa-temperature-half"><span class="temptext1"></span></i><i class="fa-solid fa-cloud"><span class="temptext2">low</span></i></div>
+
+    <script>
+ var city = "gulmarg";
+    var APIkey = "50a4d79c37ca48cd6e8206aa691bcfd4";
+    let x,y;
+
+    fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`
+    )
+  .then((response) => response.json())
+  .then( 
+    (data) =>{
+       
+        
+    //   console.log(data);  
+
+      y=data.main.humidity+"%";
+      x=Math.floor(data.main.temp-273.15);
+
+
+    document.querySelector(".temptext1").innerHTML=x+'&#x2103';
+    document.querySelector(".temptext2").innerHTML=y;
+
+      }
+    
+  );
+
+    </script>
+
+    </div>
+
+
+<div class="uper">
+  <div class="headidng">
+ <h1>How to Reach Sonmarg?</h1> 
+  
+<div class="maps">
+ 
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d211495.64850650597!2d74.44944487199501!3d34.079266818772496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x38e1855686e3c5ef%3A0x66244b7cc1e305c6!2sSrinagar!3m2!1d34.0836708!2d74.7972825!4m5!1s0x38e1af91308dd977%3A0x7a5cc65c8fb01df7!2sGulmarg%20193403!3m2!1d34.048370399999996!2d74.3804791!5e0!3m2!1sen!2sin!4v1654590764205!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div class="txt"> How to reach Sonmarg by Air <br><br>
+    The nearest International Airport is Srinagar International Airport, roughly 80 Kms from Sonmarg.<br> This airport is well connected to the other important cities like Jammu, New Delhi, Mumbai, Leh, Amritsar and Bangalore.<br><br>
+    
+    Nearest Airport : Srinagar Airport, Srinagar <br>
+    
+    How to reach Sonmarg by Rail <br>
+    The nearest railway station to Sonmarg is Srinagar railway station and is well connected through various trains.<br> Trains connect Sonmarg to the cities like Delhi, Mumbai, and Chennai.<br><br>
+    
+    How to reach Sonmarg by Road<br>
+    Sonamarg is 80 Kms from Srinagar, 120 Kms from Gulmarg, 144 Kms from Achabal, 150 Kms from Kokernag, 174 Kms from Pahalgam and is very well connected through Jammu and Kashmir State Road Transport Corporation.</div>
+</div>
+</div>
+
+
+
+
+<div class="ptv">
+ <div class="hedng">PLACES TO VISIT IN SONMARG</div>
+
+
+
+ <h1>1. Gangabal Lake</h1>
+ <div class="imgsgul">
+   <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+   
+  <div class="im1">
+    <img src="images/gangabal1.jpg" alt="">
+    <img src="images/gangabal2.jpg" alt="">
+    <img src="images/gangabal3.jpg" alt="">
+ </div>
+
+
+
+ <div class="gultext">A cascading river at the foothills of Mount Harmukh, Sonmarg sightseeing is so not complete without including a visit to the mesmerizing Gangabal Lake. Drawing its resources from the natural springs and glaciers, Gangabal Lake is one of the best places to visit in Sonmarg in June for those who’re looking forward to enjoy the best of trekking in the heart of Kashmir.
+
+    Location: Kashmir Valley, Ganderbal, Sonmarg, Jammu and Kashmir</div>
+
+</div>
+
+ 
+ 
+ <br>
+ <br>
+  <h1>2. Baltal Valley</h1>
+  <div class="imgsgul">
+    <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+    
+   <div class="im1">
+     <img src="images/baltal3.jpg" alt="">
+     <img src="images/baltal2.jpg" alt="">
+     <img src="images/baltal1.JPG" alt="">
+  </div>
+ 
+ 
+ 
+  <div class="gultext">Serving as a perfect base for the travelers to embark on the famous Amarnath Yatra, Baltal Valley is one of the best places of interest in Sonmarg. <br> Set along the banks of River Sindhi, it offers breathtaking views of the snowbound mountains at a distance of just 15 kilometers from the town of Sonmarg. <br> <br>
+
+    Location: Near Zoji La Pass, Sonmarg, 191203, Jammu and Kashmir</div>
+ 
+ </div>
+
+
+
+
+ <br>
+ <br>
+  <h1>3. Thajiwas Glacier</h1>
+  <div class="imgsgul">
+    <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+    
+   <div class="im1">
+     <img src="images/Thaji1.jpg" alt="">
+     <img src="images/alpather.jpg" alt="">
+     <img src="images/Thaji3.jpg" alt="">
+  </div>
+ 
+ 
+ 
+  <div class="gultext">Opening up umpteen number of opportunities for hiking, trekking, and camping, Thajiwas Glacier is one of the best Sonmarg attractions that one must not miss during their trip to Kashmir. <br> Home to a stunning glacier, the refreshing meadows, and numerous waterfalls, Thajiwas Glacier is every bit of stunner and a true Kashmiri delight to experience. <br><br>
+
+    Location: Forest Block, Sonmarg, Jammu and Kashmir 191203</div>
+ 
+ </div>
+
+
+
+
+ <br>
+ <br>
+  <h1>4. Zoji-La Pass</h1>
+  <div class="imgsgul">
+    <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+    
+   <div class="im1">
+     <img src="images/z1.jpg" alt="">
+     <img src="images/z2.jpg" alt="">
+     <img src="images/z3.jpg" alt="">
+  </div>
+ 
+ 
+ 
+  <div class="gultext">
+    Located high on the Indian National Highway 1D, Zoji La is one of the highly perched, and dangerous yet thrilling mountain passes in Kashmir. It not only connects Srinagar to Leh but it is one of those thrilling tourist places in Sonmarg that takes you a step closer to the Himalayas. <br><br>
+
+Location: 1 Indian National Highway, Srinagar District, Sonamarg 191203, Jammu and Kashmir
+  </div>
+
+
+  <br>
+  <br>
+   <h1>5. Satsar Lake</h1>
+   <div class="imgsgul">
+     <!-- <h1>1. Skiing – Apharwat Peak</h1> -->
+     
+    <div class="im1">
+      <img src="images/s1 (1).jpg" alt="">
+      <img src="images/s2.jpg" alt="">
+      <img src="images/s3.jpg" alt="">
+   </div>
+  
+  
+  
+   <div class="gultext">
+    Located in the Ganderbal district of Kashmir and at an enthralling elevation of 3,610 meters, Satsar Lake is one of the best places to visit in Sonmarg. Literally translating into seven lakes, this beautiful conflux houses seven clustered alpine lakes that are interconnected to each other in a cascading formation. <br> <br>
+
+    Location: Ganderbal, Jammu and Kashmir
+   </div>
+
+
+ 
+ </div>
+
+
+ <div class="ending">
+
+<div class="heading">Some Important Links</div>
+<div class="links">
+
+  <div class="set1">
+<a href="https://jktourism.jk.gov.in">Jammu and Kashmir official Website</a> <br>
+<a href="https://www.jksrtc.co.in">JK Road transport corporation</a> <br>
+</div>
+
+
+<div class="set2">
+
+<a href="https://ganderbal.nic.in/tourist-place/sonamarg">Ganderbal District Website</a> <br>
+<a href="https://www.incredibleindia.org/content/incredible-india-v2/en/destinations/srinagar/sonmarg--sonamarg-.html">sonmarg on Incridable Indian</a>
+</div>
+
+</div>
+
+ </div>
+  
+ <script src="https://kit.fontawesome.com/d5efe3800f.js" crossorigin="anonymous"></script>
+</body>
+</html>
