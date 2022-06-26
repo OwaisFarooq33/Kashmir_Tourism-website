@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gulmarg.css">
+    
+</head>
+<body>
+    <!-- <div class="fix"> -->
+    <div class="all">
+    <video autoplay loop muted plays-inline class="vid">
+    <source src="v4.webm#t=17,172" type="video/webm">
+  
+  </video>
+    <div class="logoandmenubar">    
+        <!-- logo and menubar -->
+
+        <div class="logo"><img src="images/logo.png" alt="" img{ height="50px" width="70px"}>
+        </div>
+
+
+        <div class="menu-bar">
+            <ul>
+            <li class="li1"><a href="allpage.html">HOME</a></li>
+        
+        
+        <!-- This is the Destination dropdown -->
+        
+            <li class="li1"><a href="#">DESTINATIONS</a>
+            
+              <div class="sub-menu1">
+              
+            <ul class="subdiff">
+                <li><a href="Gulmarg.html">Gulmarg</a></li>
+                <li><a href="Pahalgam.html">Pahalgam</a></li>
+                <li><a href="Sonamarg.html">Sonamarg</a></li>
+                <li><a href="Manasbal.html">Manasbal</a></li>
+                <li><a href="Srinagar.html">Srinagar</a></li>
+                <li><a href="Kokernag.html">Kokernag</a></li>
+                <li><a href="Yousmarg.html">Yousmarg</a></li>
+                <li><a href="Tosmadan.html">Tosmadan</a></li>
+                <li><a href="LolabValley.html">LolabValley</a></li>
+            </ul>
+        
+             </div>
+              </li>
+        
+        <!-- This is the Religious Places dropdown -->
+        
+        
+             <li class="li1"><a href="#">RELIGIOUS PLACES</a>
+                <div class="sub-menu1">
+              
+                    <ul>
+                        <li><a href="Hazratbal.html">Hazratbal</a></li>
+                        <li><a href="Amarnath.html">Amarnath</a></li>
+                        <li><a href="shanker.html">Shanker-Ancherya</a></li>
+                        <li><a href="HFCC.html">Holy family catholic church</a></li>
+                    </ul>
+                
+                     </div>
+            
+            </li>
+        
+        
+        
+        <!-- This is the Discover More dropdown -->
+        
+        
+            <li class="li1"><a href="#">DISCOVER MORE</a>
+            
+                <div class="sub-menu1">
+              
+                    <ul>
+                        <li><a href="#">Adventure Tourism</a></li>
+                        <li><a href="#">Handicraft</a></li>
+                        <li><a href="#">Must visit Places</a></li>
+                        <li><a href="#">Lesser Known Places</a></li>
+                    </ul>
+                
+                     </div>
+            </li>
+        
+        
+        <!-- This will be the About us section -->
+        
+            <li class="li1"><a href="#">ABOUT US</a></li>
+            
+          
+        
+              <li>
+                  <!-- <a> -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/font-awesome.min.css">
+        <form class="example" action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+              <!-- </a> -->
+            </li>
+
+
+            </ul>
+             </div>
+    
+    </div>
+
+    <div class="moto">welcome to Gulmarg</div>
+    <div class="tempandhumidity"><i class="fa-solid fa-temperature-half"><span class="temptext1"></span></i><i class="fa-solid fa-cloud"><span class="temptext2">low</span></i></div>
+
+    <script>
+ var city = "Kupwara";
+    var APIkey = "50a4d79c37ca48cd6e8206aa691bcfd4";
+    let x,y;
+
+    fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`
+    )
+  .then((response) => response.json())
+  .then( 
+    (data) =>{
+       
+        
+    //   console.log(data);  
+
+      y=data.main.humidity+"%";
+      x=Math.floor(data.main.temp-273.15);
+
+
+    document.querySelector(".temptext1").innerHTML=x+'&#x2103';
+    document.querySelector(".temptext2").innerHTML=y;
+
+    //     document.querySelector(".temptext").innerHTML = `${Math.floor(
+    //     data.main.temp-273.15
+    //   )	} degree C <br>and humidity is ${data.main.humidity}`
+      }
+    
+  );
+
+    </script>
+
+    </div>
+<!-- </div>  -->
+
+
+
+
+<div class="uper">
+  <div class="headidng">
+ <h1>How to Reach LolabValley?</h1> 
+  
+<div class="maps">
+ 
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d422163.4518966411!2d74.30453002767817!3d34.24466569413317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x38e1855686e3c5ef%3A0x66244b7cc1e305c6!2sSrinagar!3m2!1d34.0836708!2d74.7972825!4m5!1s0x38e11007926bc135%3A0x666a8dbaf11fe74f!2sMuqam%20Lolab%2C%20193201!3m2!1d34.3920424!2d74.4071271!5e0!3m2!1sen!2sin!4v1654595919501!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div class="txt"> The city of Gulmarg is situated at a distance of mere 51 kilometers from Srinagar. Therefore, traveling by road is the best option to cover the distance from Srinagar to Gulmarg. There are many buses available that will help you proceed with the journey. Other means of transportation are also available, however, taking a bus or hiring is the most convenient medium. The best time to visit Gulmarg to have a spectacular skiing experience is during winter from December to mid-March. Those of you who are wondering how to reach Gulmarg from Srinagar should take a look at the following information. 
+
+    <br>Srinagar to Gulmarg by Road: By Bus: The best way to travel from Srinagar to Gulmarg is by road.  To cover the 51 KMs distance between Srinagar to Gulmarg, you can travel by Srinagar to Tangmarg road. Local buses are available up to Tangmarg market from where the mini coaches or jeeps can be hired to reach Gulmarg. It takes approximately one hour and twelve minutes to reach Gulmarg from Srinagar. No AC bus is available on this route. The popular bus operators are JKSRTC Buses, TRC Srinagar.<br>By Car: One can also opt to drive to Gulmarg from Srinagar. Since it is a short distance, one can easily cover it through a road trip as well. Whether you opt to take a taxi or drive yourself, it is recommended to enquire about the road conditions of the area, especially during winters.</div>
+</div>
+
+
+
+</div>
+
+</div>
+    <div class="bottom">links and websites</div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/d5efe3800f.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,756 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 233, 233);
+  /* color: black; */
+  /* border: 5px solid red; */
+  /* display: flex; */
+  /* flex-direction:s column; */
+  /* justify-content: center; */
+}
+
+
+.all{
+
+/* border: 5px solid rgb(101, 11, 77); */
+width: 100%;
+height: 100vh;
+/* =================== */
+display: flex;
+flex-direction:column;
+/* align-items: ; */
+/* ============================= */
+
+
+}
+
+/* body div{
+  border:10px solid blue;
+} */
+
+.logoandmenubar{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* border:2px solid rgb(0, 0, 0); */
+  height: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================ This is the bottom line =================================*/
+
+
+
+
+
+
+  form.example input[type=text] {
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(249, 249, 249);
+    float: left;
+    outline: none;
+    width: 80%;
+    background:transparent;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background:transparent;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    border: 1px solid rgb(255, 247, 247);
+    border-radius: 10px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  form.example button:hover {
+    background:rgb(65, 7, 7);
+
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+/*============================ This is the bottom line =================================*/
+
+
+/* ======================= menubar properties================================================ */
+
+.menu-bar
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: transparent;
+/* height: 70px; */
+width: 100%;
+/* margin-top: 10px; */
+text-align: center;
+font-size: 20px;
+/* margin-right: 250px; */
+/* border: 4px solid rgb(0, 0, 0); */
+}
+
+.menu-bar ul
+{
+
+display:flex;
+justify-content: space-around;
+align-items: center;
+list-style: none;width: 100%;
+
+/* z-index: 1; */
+/* border: 3px solid rgb(142, 55, 55); */
+color: rgb(0, 234, 39);
+
+
+}
+
+.menu-bar ul .li1
+{
+   display:flex;
+   flex-direction:column;
+   /* border: 3px solid rgb(0, 0, 0); */
+   align-items: center;
+   margin: -10px;
+   padding: 15px;
+  
+
+}
+
+.menu-bar ul li
+{
+  font-size: 10px;
+    /* display:flex;
+    flex-direction:column;
+    border: 3px solid rgb(0, 0, 0);
+    align-items: center; */
+    margin: -10px;
+    padding: 15px;
+   
+
+ }
+
+.menu-bar ul li:hover
+{
+
+   cursor: auto;
+   background: transparent;
+   /* border-bottom: 1px solid white; */
+   border-top: 1px solid rgb(0, 0, 0);
+   border-radius: 15px;
+   /* z-index: 1; */
+   /* border-radius: 3px; */
+}
+
+.menu-bar ul li a
+{
+   font-size: 15px;
+   font-weight: bold;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+ 
+}
+.subdiff li:hover {
+  
+  text-decoration: none;
+  color: green;
+}
+
+
+
+.sub-menu1
+{
+   /* border: 3px solid red; */
+   width: 100px;
+   display: none;
+   margin-top: 10px;
+   background-color: transparent;
+   
+   
+}
+
+
+.menu-bar ul li:hover .sub-menu1
+{
+   display: block;
+   position: absolute;
+   background: transparent;
+   color: solid rgb(255, 255, 255);
+   margin-top: 15;
+   /* margin-left: 15; */
+   
+
+
+}
+
+.menu-bar ul li:hover .sub-menu1 ul
+{
+  /* background-color: #000000; */
+ 
+   display: block;
+   margin:20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+  
+   
+   
+}
+.menu-bar ul li:hover .sub-menu1 ul li
+{
+
+width: 110px;
+padding: auto;
+background: transparent;
+color: solid rgb(249, 249, 249);
+/* border-bottom: 0.5px solid white;
+border-top: 0.5px solid white; */
+border-radius: 15px;
+text-align: left;
+/* background-color:rgb(255, 255, 255); */
+
+
+
+
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+   color: rgb(16, 14, 120);
+}
+
+
+/* ======================= menubar properties================================================ */
+
+
+.vid{
+   /* border: 5px solid green; */
+  position: absolute;
+  top: -10%;
+  width: 100%;
+  /* height:100vh; */
+  z-index: -1;
+}
+
+.moto{
+  color: rgb(0, 0, 0);
+  margin-top: 30%;
+  text-align: center;
+  font-size: 90px;
+}
+h3{
+
+  font-size: 40px;
+}
+/* when temperature and humidity is fixed */
+.tempandhumidity{
+position: fixed;
+top:30%;
+right: 2%;
+font-size: 40px;
+color: rgb(159, 146, 41);
+width: 12%;
+height: 25%;
+display: flex;
+flex-direction: column;
+/* border: 1px solid rgb(255, 255, 255); */
+background: rgba(255, 255, 255, 0.7); 
+border-radius: 20px;
+text-align: center;
+align-items:flex-start;
+justify-content: space-around;
+padding-left: 1%;
+
+}
+
+
+.fa-cloud {
+
+color: rgb(177, 177, 192);
+
+
+}
+
+/* =================if not fixed============================== */
+/* .tempandhumidity{
+  width: 40%;
+  color: aliceblue;
+  border: 5px solid blue;
+  align-self: center;
+  display: flex;
+  font-size: 40px;
+  flex-direction: ;
+  align-items: center;
+  justify-content:space-around;
+  
+} */
+
+
+
+
+/* when temperature and humidity is fixed */
+.temptext1,.temptext2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 80px;
+  color:rgb(0, 0, 0);
+  margin-left: 20%;
+}
+
+/* .fix{
+  height: 100vh;
+} */
+
+
+/* =================season pictures and texts================================================================== */
+
+.seasonpictures{
+align-self: flex-start;
+width: 50%;
+height: 50%;
+/* border: 5px solid rgb(51, 51, 7); */
+display: flex;
+flex-direction: column;
+}
+
+
+.pic1n2,.pic3n4{
+width:100%;
+/* border: 5px solid green; */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.pic1n2 img ,.pic3n4 img{
+
+height: 100%;
+width: 100%;
+border-radius: 25px;
+
+}
+.pic1n2 div,.pic3n4 div{
+width: 60%;
+height: 300px;
+/* border: 5px solid salmon; */
+}
+
+
+
+
+
+/* =====================mustvisitplaces============================================================== */
+
+.content
+{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: transparent;
+/* margin-top: 10px; */
+/* border: 5px solid rgb(177, 52, 125); */
+height: 600px;
+width: 100%;
+}
+
+
+/* =====================content============================================================== */
+
+
+.uper{
+
+display: flex;
+flex-direction: column;
+align-items:center;
+margin-left: 6%;
+margin-right: 6%;
+justify-content:space-around;
+/* /* width: 100%; */
+background-color: transparent;
+margin-top: 3%;
+/* border: 5px solid rgb(64, 180, 64); */
+color: rgb(0, 0, 0);
+text-align: left;
+
+
+}
+
+.uper div {
+margin-top: 3%;
+
+
+}
+
+.maps{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 100%;
+
+}
+iframe 
+{
+border-radius: 6%;
+}
+/* .maps img{
+width: 100%;
+} */
+
+.txt{
+
+width: 50%;
+
+font-size: large;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.headidng{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.ptv
+{
+
+display: flex;
+flex-direction:column;
+align-items: flex-start;
+justify-content: center;
+/* border: 3px solid red; */
+width: 100%;
+
+
+
+}
+
+.hedng{
+
+font-size: 50px;
+margin-left: 30%;
+/* border: 4px solid blue; */
+margin-bottom: 5%;
+
+
+
+
+}
+
+
+.im1{
+/* border: 5px solid green; */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+
+width: 100%;
+
+}
+
+.im1 img{
+width: 30%;
+height: 350px;
+border-radius: 10%;
+}
+
+.imgsgul{
+
+width: 100%;
+height: 100%;
+}
+.gultext{
+
+font-size:large;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+}
+
+
+
+.ending {
+
+/* border: 5px solid red; */
+background-color: rgb(117, 162, 216);
+display: flex;
+flex-direction: column;
+width: 100%;
+border-radius: 25%;
+margin-bottom: 5%;
+
+}
+
+.heading{
+/* border: 4px solid green; */
+color: white;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: xx-large;
+}
+
+.links{
+/* border: 5px solid rgb(214, 17, 17); */
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+font-family:  'Arial Narrow Bold', sans-serif;
+font-size: large;
+margin-bottom: 5%;
+
+}
+
+.set1 a {
+display: flex;
+flex-direction: column;
+text-decoration: none;
+color: rgb(255, 255, 255);
+
+
+}
+.set2 a {
+display: flex;
+flex-direction: column;
+text-decoration: none;
+color: rgb(255, 255, 255);
+
+}
+
+
+/* ===================================for Responsiveness================================================ */
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+/* body{   border: 5px solid rgb(255, 0, 200);  } */
+
+
+.menu-bar ul li a{  font-size: 10px;  }
+
+
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 10px;
+  width: 70%;
+  border-radius: 5px;
+  
+}
+
+/* Style the submit button */
+form.example button {
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+}
+/* hiding the logo */
+.logo{
+  display: none;
+}
+
+.moto{
+font-size: 30px;
+margin-top: 25%;
+}
+
+.tempandhumidity{
+top:12%;
+width: 14%;
+font-size: 15px;
+height:10%;
+border-radius: 10px;
+}
+
+.temptext1,.temptext2{
+font-size:5px;
+}
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+body{
+ 
+ 
+  /* border: 5px solid red; */
+  
+}
+
+
+.menu-bar ul li a{  font-size: 12px;  }
+
+
+/* form.example input[type=text] {
+padding: 5px;
+font-size: 10px;
+width: 70%;
+border-radius: 5px;
+
+} */
+
+/* Style the submit button */
+/* for */
+/* hiding the logo */
+.logo{
+display: none;
+}
+
+.menu-bar ul li a{  font-size: 12px;  }
+
+
+.moto{
+font-size: 35px;
+margin-top: 25%;
+}
+
+
+.tempandhumidity{
+top:15%;
+width: 15%;
+font-size: 25px;
+height:15%;
+border-radius: 10px;
+}
+
+.temptext1,.temptext2{
+font-size:5px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+body{
+ 
+ 
+  /* border: 5px solid green; */
+  
+}
+
+.menu-bar ul li a{  font-size: 15px;  }
+.moto{
+font-size: 40px;
+margin-top: 30%;
+}
+
+
+.tempandhumidity{
+  top:20%;
+  width: 15%;
+  font-size: 30px;
+  height:20%;
+  border-radius: 10px;
+}
+
+.temptext1,.temptext2{
+font-size:10px;
+}
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+body{
+ 
+ 
+  /* border: 5px solid yellow; */
+  
+}
+
+
+
+.moto{
+font-size: 50px;
+margin-top: 35%;
+}
+
+
+.tempandhumidity{
+  top:25%;
+  width: 15%;
+  font-size: 30px;
+  height:20%;
+  border-radius: 10px;
+}
+
+.temptext1,.temptext2{
+font-size:15px;
+}
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+body{
+ 
+ 
+  /* border: 5px solid blue; */
+  
+  
+}
+.temptext1,.temptext2{
+font-size:20px;
+}
+}
+
+
+
+
+/* ===================================for Responsiveness================================================ */

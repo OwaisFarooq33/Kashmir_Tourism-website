@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="Homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@500&family=Dosis:wght@200&family=Indie+Flower&family=Oxygen:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <!-- <div class="fix"> -->
     <div class="all">
-    <video autoplay loop muted plays-inline class="vid">
-    <source src="v4.webm#t=17,172" type="video/webm">
+    <video autoplay loop  muted plays-inline class="vid">
+    <source src="images/dal1.mp4" type="video/mp4">
   
   </video>
     <div class="logoandmenubar">    
@@ -26,7 +27,7 @@
 
         <div class="menu-bar">
             <ul>
-            <li class="li1"><a href="#">HOME</a></li>
+            <li class="li1"><a href="Homepage.html">HOME</a></li>
         
         
         <!-- This is the Destination dropdown -->
@@ -37,10 +38,10 @@
               
             <ul class="subdiff">
                 <li><a href="Gulmarg.html">Gulmarg</a></li>
-                <li><a href="#">Pahalgam</a></li>
-                <li><a href="#">Sonamarg</a></li>
-                <li><a href="#">Manasbal</a></li>
-                <li><a href="#">Srinagar</a></li>
+                <li><a href="pahalgam.html">Pahalgam</a></li>
+                <li><a href="sonmarg.html">Sonmarg</a></li>
+                <li><a href="Manasbal.html">Manasbal</a></li>
+                <li><a href="srinagar.html">Srinagar</a></li>
                 <li><a href="#">Kokernag</a></li>
                 <li><a href="#">Yousmarg</a></li>
                 <li><a href="#">Tosmadan</a></li>
@@ -111,7 +112,7 @@
 
     <div class="moto">welcome to kashmir <br> <h3>The paradise on earth</h3></div>
 
-    <div class="tempandhumidity"><i class="fa-solid fa-temperature-half"><span class="temptext">22 degree C</span></i><i class="fa-solid fa-cloud"><span class="temptext">low</span></i></div>
+    <div class="tempandhumidity"><i class="fa-solid fa-temperature-half"><span class="temptext1">22 degree C</span></i><i class="fa-solid fa-cloud"><span class="temptext2">low</span></i></div>
 
 
     </div>
@@ -130,20 +131,18 @@
 
     <!-- ===============mustvisit places=============== -->
 
-<div class="ioa"><a href="#"><img src="srinagar.jpg" alt=""></a>
+<div class="ioa"><a href="#"><img src="images/srinagar.jpg" alt=""></a>
 
-    <div class="name">
-        Srinagar
-    </div>
-    </div>
-
-    <div class="ioa"><a href="#"><img src="phal.jpg" alt=""></a>
+    <div class="name">Srinagar
+</div>
+    </div> -->
+    <div class="ioa"><a href="#"><img src="images/phal.jpg" alt=""></a>
 
         <div class="name">
             Pahalgam
         </div>
     </div>
-        <div class="ioa"><a href="#"><img src="images/image5.jpg" alt=""></a>
+        <div class="ioa"><a href="Gulmarg.html"><img src="images/image5.jpg" alt=""></a>
 
             <div class="name">
                 Gulmarg
@@ -171,14 +170,14 @@
         <div class="seasonpictures">
             <!-- <div class="season">Seasons in Kashmir</div> -->
           <div class="pic1n2">
-          <div><img src="spring.jpg" alt=""></div>
+          <div><img src="images/spring.jpg" alt=""></div>
           &nbsp;
-          <div><img src="summer.jpeg" alt=""></div>
+          <div><img src="images/summer.jpeg" alt=""></div>
           </div>
           <div class="pic3n4">
-          <div><img src="autum.jpg" alt=""></div>
+          <div><img src="images/autum.jpg" alt=""></div>
           &nbsp;
-          <div><img src="winter.jpg" alt=""></div>
+          <div><img src="images/winter.jpg" alt=""></div>
           </div>
           </div>
           
@@ -193,8 +192,84 @@
     </div>
 
 </div>
+
+<!-- This is for art and Handicraft -->
+
+
+<div  class="Handicraft">
+    <div>ART AND CRAFT IN KASHMIR</div>
+
+
+
+</div>
+    <div class="Artcraft">
+        <!-- about seasons -->
+        <div class="seasonpictures">
+            <!-- <div class="season">Seasons in Kashmir</div> -->
+          <div class="pic1n2">
+          <div><img src="images/suhaib.jpg" alt=""></div>
+          &nbsp;
+          <div><img src="images/sama.jpg" alt=""></div>
+          </div>
+          <div class="pic3n4">
+          <div><img src="images/car.jpg" alt=""></div>
+          &nbsp;
+          <div><img src="images/shawl.jpg" alt=""></div>
+          </div>
+          </div>
+          
+          <div class="text">The splendid Handicrafts of Jammu and Kashmir make it famous all over the world. Some kind of elegant art work is present almost in everything in Jammu and Kashmir, be it embroidery on the shawls, papier-mache and steel ware and wood work. When it comes to Jammu and Kashmir Handicrafts, the villages of Anantnag and Srinagar have been quite famous for enhancing its creative beauty. They are world famous for carpets and wooden furniture. Along with it, the antique items include Shahtoosh Shawls and Pashmina shawls. Crewel ware, brass and silver ware are other interesting articles.
+          </div>
+    
+    
+    </div>
+
+</div>
+
+
+<!-- Art and Handicraft ends here -->
+
+
     <div class="bottom">links and websites</div>
     <script src="https://kit.fontawesome.com/d5efe3800f.js" crossorigin="anonymous"></script>
+
+
+    <script>var city = "srinagar";
+        var APIkey = "50a4d79c37ca48cd6e8206aa691bcfd4";
+        let x,y;
+    
+        fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`
+        )
+      .then((response) => response.json())
+      .then( 
+        (data) =>{
+           
+            
+        //   console.log(data);  
+    
+          y=data.main.humidity+"%";
+          x=Math.floor(data.main.temp-273.15);
+    
+    
+        document.querySelector(".temptext1").innerHTML=x+'&#x2103';
+        document.querySelector(".temptext2").innerHTML=y;
+    
+        //     document.querySelector(".temptext").innerHTML = `${Math.floor(
+        //     data.main.temp-273.15
+        //   )	} degree C <br>and humidity is ${data.main.humidity}`
+          }
+
+
+       
+        
+      );
+//       var vid = document.querySelector(".vid");
+// vid.playbackRate = 5;
+      </script>
+
+
+
 
 </body>
 </html>

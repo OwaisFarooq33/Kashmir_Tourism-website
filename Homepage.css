@@ -7,11 +7,12 @@ body{
     width: 100%;
     height: 100%;
     color: rgb(249, 231, 231);
-    background-color: rgb(188, 186, 184);
+    background-color: rgb(173, 195, 205);
     /* border: 5px solid red; */
     display: flex;
     flex-direction:column;
     justify-content: center;
+    display: wrap;
 }
 
 
@@ -44,16 +45,7 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-/*============================ This is the bottom line =================================*/
+/*============================ This is the search button =================================*/
   
 
   
@@ -102,16 +94,13 @@ body{
       display: table;
     }
   
-  
-  
-  /*============================ This is the bottom line =================================*/
-  
 
  /* ======================= menubar properties================================================ */
 
  .menu-bar
  {
  display: flex;
+ display: wrap;
  align-items: center;
  justify-content: space-between;
  background: transparent;
@@ -170,8 +159,8 @@ body{
      cursor: auto;
      background: transparent;
      /* border-bottom: 1px solid white; */
-     border-top: 1px solid rgb(0, 0, 0);
-     border-radius: 15px;
+     /* border-top: 1px solid rgb(0, 0, 0); */
+     /* border-radius: 15px; */
      /* z-index: 1; */
      /* border-radius: 3px; */
  }
@@ -251,13 +240,17 @@ body{
      color: rgb(0, 0, 0);
  }
  
+
+ 
  
  /* ======================= menubar properties================================================ */
 
 
  .vid{
+
+
      /* border: 5px solid green; */
-    position: absolute;
+    position:absolute;
     top: -10%;
     width: 100%;
     /* height:100vh; */
@@ -293,6 +286,7 @@ body{
 
 }
 
+/* This here is for the seasons  */
 
 .sea{
   /* border: 5px solid red; */
@@ -321,7 +315,7 @@ border-radius: 10%;
 }
 .pic1n2 div,.pic3n4 div{
   width: 95%;
-  height: 350px;
+  height: 370px;
   /* border: 5px solid salmon; */
 }
 
@@ -340,10 +334,34 @@ border-radius: 10%;
   width: 50%;
   font-size: medium;
   font-family: cursive;
-  margin-bottom: -30px;
-  color: rgb(255, 255, 255);
+  margin-bottom: 3%;
+  color: rgb(0, 0, 0);
 
 }
+
+
+
+/* =================================This here is for Handicrafts ====================================*/
+
+.Handicraft
+{
+   /* border: 5px solid red; */
+   margin-bottom: 5%;
+   text-align: center;
+   font-size: 300%;
+   color: brown;
+}
+
+.Artcraft
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+
+
 
 
 
@@ -358,10 +376,12 @@ flex-direction: row;
 justify-content: space-around;
 align-items: center;
 background-color: transparent;
-/* margin-top: 10px; */
+z-index: -1;
+margin-top: 10px;
 /* border: 5px solid rgb(177, 52, 125); */
 height: 600px;
 width: 100%;
+ 
 }
 
 
@@ -370,7 +390,7 @@ width: 100%;
   align-items: center;
   justify-content: center;
   /* border: 5px solid rgb(88, 66, 162); */
-  /* border-radius: 10%; */
+  border-radius: 10%;
   height: 80%;
   width: 100%;
 } 
@@ -386,7 +406,6 @@ width: 100%;
 
 .ioa img{
   border-radius: 10%;
-  /* position: absolute; */
   width: 100%;
   height: 90%;
   opacity: 0.9;
@@ -402,6 +421,7 @@ width: 100%;
   font-size: 35px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 /* =====================mustvisitplaces============================================================== */
 
@@ -475,6 +495,7 @@ color: rgb(177, 177, 192);
 
 
 }
+
 /* =================if not fixed============================== */
   /* .tempandhumidity{
     width: 40%;
@@ -494,11 +515,12 @@ color: rgb(177, 177, 192);
 
 
 /* when temperature and humidity is fixed */
-.temptext{
+.temptext1,.temptext2{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size:10px;
+  font-size: 80px;
+  color:white;
+  margin-left: 20%;
 }
-
 
 
 
@@ -511,6 +533,10 @@ color: rgb(177, 177, 192);
     /* border: 5px solid red; */
     
 }
+.temptext1,.temptext2{
+  font-size:5px;
+  }
+
 
   
 .menu-bar ul li a{  font-size: 12px;  }
@@ -536,7 +562,7 @@ font-size: 35px;
 margin-top: 25%;
 }
 
-.temptext{
+.temptext1,.temptext2{
 font-size:5px;
 }
 
@@ -552,6 +578,9 @@ font-size:5px;
     /* border: 5px solid green; */
     
 }
+.temptext1,.temptext2{
+  font-size:10px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -561,15 +590,21 @@ font-size:5px;
    
     /* border: 5px solid yellow; */
     
-}
+}  
+.temptext1,.temptext2{
+  font-size:15px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   body{
    
-   
+
     /* border: 5px solid blue; */
     
 }
+.temptext1,.temptext2{
+  font-size:20px;
+  }
 }
